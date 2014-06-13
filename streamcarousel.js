@@ -71,7 +71,7 @@
             $('.scdtitle', tp).html(im[d]('title'));
             $('.scdtext', tp).html(im[d]('description'));
         };
-        T.sd();
+        T.sd(e);
         if (s.auto) {
             w[si+T.c] = w.setInterval(T.n, s.pause);
         }
