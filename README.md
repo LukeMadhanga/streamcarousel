@@ -1,0 +1,4 @@
+streamcarousel
+==============
+
+Lightweight image slider
