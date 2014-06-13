@@ -1,0 +1,20 @@
+.streamcarousel{list-style: none;padding: 0;margin: 0;position: relative;width: 100%;overflow: hidden;}
+.streamcarousel  li{position: absolute;display: block;left: 0;top: 0;width: 100%;z-index: 1;}
+.streamcarousel img{width: 100%;height: auto;float: left;display: block;border: none;}
+.scCur{float: left !important; position: relative !important; opacity: 1 !important; z-index: 1001 !important;}
+.scOld{float: none; position: absolute; opacity: 0 !important; z-index: 1000;}
+.scdhold{position: absolute;z-index: 1002;height: 70px;width: 100%;bottom: -70px;background:#000;opacity: 0.75;border-top: #636363 solid thin;
+-webkit-transition: bottom 0.4s;-moz-transition: bottom 0.4s;transition: bottom 0.4s;}
+.scdhold > div {position: absolute;box-sizing: border-box;padding: 10px;}
+.scdesc {height: 100%;width: 85%;}
+.scdesc > a {display:block;color: #fff;cursor:default;}
+.scdtitle {font-weight: bold;font-size: 11px;}
+.sccon {height: 100%;width: 15%;right: 0;}
+.sccon > div {background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAAAUCAYAAAADf5Y0AAACWUlEQVRoQ+1agU3DMBBsNoAN2ACYgDAB7QS0G7QTkE5AmYAyAWUCYIMyAWUCYIJwh95VZdHYAcd5C1uKSmXjP9+f3/5Pi0FumQFFDBSKsGQomYFBFmQWgSoG1AuyrusDMHaPp8TzhGdUFMUHWWzqU8VyBuPNQKMg4fCNiGFuROA9c6CBwEAhPu5Mdw4sFCYFubcvkPlW0wBPhX84xjMDRnIXrcH2EYxd41nD9jya4cCGXIKsxR4j0gQLXQW275wuFUEC5xKLuZQFMYpH5Qr2hxI8CGEJ+xMnuQoH+ArSQGdkojCj7f4UBAmMY/ByKyTdgR9+j96sTUE/cZMk1doK0iyuinUsaBekFjEax2gUpVwnBj6B7LeC5PoZJbkLGTU7a5oFaYnxAVzw2Oy9ARd9ciZAeo2Ucq++EizMRaomgv4iSDPvAkZmXXlBqyAtXC9Yf9lX4mdzL9UHipIJFtspsK278tG+eQXHu9V/2MRTCEHewMC0q8UmIkg6m9n/dzmq7yZCYGXiRLBsKxMxsclR/RpLkG8wNM5H9jaZWYGLUUyHN0QmZvgX0v8vjmznXSCUY7RGSLM+6x7Ze7lFaVLDlxtMapwnSNsj+1mi4iaU4FzzaBck8WsRpUYxuvxr9/sK8lOEGLXYK84u8an+TY0lhuh3Nqsw3um9vq3I2ox3CZKRkCJk3dEZbtsY9h2bQoTcOb4r/M1EYupTc/PlwGecJBALjOWrQ+JIsqXy4wpuCtbVeGUYms0h2eSPfUl6I4POPz/LGtDFgPoIqYuujKZrBrIgu2Y4z9+KgS/wNGokG783oQAAAABJRU5ErkJggg==');
+width: 20px;height: 20px;position: absolute;top: 50%;margin: -10px 0 0 -10px;cursor:pointer;}
+.scl {left: 30%;background-position: 92px;}
+.scpa {left: 50%;background-position: -36px;}
+.scpl{background-position: -1px !important;}
+.scr{left: 70%;background-position: 57px;}
+.scparent{position: relative !important;overflow:hidden !important;}
+.scparent:hover > .scdhold{bottom: 0;}
