@@ -1,4 +1,4 @@
-streamcarousel
+Stream Carousel
 ==============
 
 Lightweight image slider
