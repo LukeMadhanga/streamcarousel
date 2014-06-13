@@ -1,4 +1,4 @@
 Stream Carousel
 ==============
 
-Lightweight image slider
+CSS3 Image Slider
