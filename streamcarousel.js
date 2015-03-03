@@ -28,7 +28,9 @@ function ($, window, count, Math){
         var curpos = 0,
         li = t.find('li'),
         s = $.extend({
-            auto: !0, 
+            auto: !0,
+            containerMaxHeight: null, 
+            containerMaxWidth: null, 
             controls: !0,
             descriptions: !0, 
             pause: 5000,
@@ -41,7 +43,9 @@ function ($, window, count, Math){
         li.css({'-webkit-transition': transition, '-moz-transition': transition, transition: transition});
         li.addClass('scOld');
         li.eq(curpos).removeClass('scOld').addClass('scCur');
-        parent.addClass('scparent').attr({'data-strcarid':T.c});
+        parent.addClass('scparent').attr({'data-strcarid':T.c}).css({
+            'max-width': s.containerMaxWidth, 'max-height': s.containerMaxHeight
+        });
         if (s.descriptions){
             parent.append('<div class="scdhold">' + 
                         '<div class="scdesc"><a class="scdtitle"></a><a class="scdtext"></a></div><div class="sccon"><div class="scl"></div>&<div class="scr"></div></div></div>'.replace(/&/g, s.auto?'<div class="scpa"></div>':''));
